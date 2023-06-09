@@ -3,11 +3,24 @@
 @import "reseteo-css";
 //IMPORT FOOTER
 @import "footer";
-//IMPORT PORTADA INDEX
-@import "portada";
 //IMPORT HEADER
 @import "header";
 
+
+
+header {
+    width: 100%;
+    margin-bottom: 10px;
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 0 0 10px 10px;
+    background: #000000;
+  }
+  
+  body {
+    background: #000000;
+  }
 
 /*PORTADA*/
 .portada-inicio img {
@@ -17,6 +30,7 @@
     margin-bottom: 10px;
     border-radius: 10px;
   }
+  
   .portada-inicio img .portada-inicio {
     display: inline-block;
     font-family: "Poppins", sans-serif;
@@ -26,14 +40,16 @@
     text-align: center;
     width: 100%;
   }
+  
   .portada-inicio img .portada-inicio {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
   }
-  .portada-inicio img .portada-inicio:before,
-  .portada-inicio img .portada-inicio:after {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio:before,
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio:after {
     position: absolute;
     top: 0;
     bottom: 32px;
@@ -47,20 +63,24 @@
     opacity: 0.9;
     z-index: 1;
   }
-  .portada-inicio img .portada-inicio:before {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio:before {
     -webkit-transform: skew(45deg) translateX(-150%);
     transform: skew(45deg) translateX(-150%);
   }
-  .portada-inicio img .portada-inicio:after {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio:after {
     -webkit-transform: skew(45deg) translateX(155%);
     transform: skew(45deg) translateX(155%);
   }
-  .portada-inicio img .portada-inicio img {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio img {
     backface-visibility: hidden;
     max-width: 100%;
     vertical-align: top;
   }
-  .portada-inicio img .portada-inicio button {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio button {
     top: 50%;
     left: 50%;
     position: absolute;
@@ -71,7 +91,8 @@
     -webkit-box-shadow: 0 0 10px #000000;
     box-shadow: 0 0 10px #000000;
   }
-  .portada-inicio img .portada-inicio button a {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio button a {
     background-color: #000000;
     border: 2px, solid #fff;
     color: rgb(153, 79, 223);
@@ -82,32 +103,37 @@
     padding: 5px 5px;
     text-transform: uppercase;
   }
-  .portada-inicio img .portada-inicio button a {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio button a {
     position: relative;
     z-index: 3;
   }
-  .portada-inicio img .portada-inicio:hover > img,
-  .portada-inicio img .portada-inicio.hover > img {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio:hover>img,
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio.hover>img {
     opacity: 50%;
   }
-  .portada-inicio img .portada-inicio:hover:before,
-  .portada-inicio img .portada-inicio.hover:before {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio:hover:before,
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio.hover:before {
     -webkit-transform: skew(45deg) translateX(-55%);
     transform: skew(45deg) translateX(-55%);
   }
-  .portada-inicio img .portada-inicio:hover:after,
-  .portada-inicio img .portada-inicio.hover:after {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio:hover:after,
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio.hover:after {
     -webkit-transform: skew(45deg) translateX(55%);
     transform: skew(45deg) translateX(55%);
   }
-  .portada-inicio img .portada-inicio:hover button,
-  .portada-inicio img .portada-inicio.hover button {
+  
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio:hover button,
+  .portada-inicio img .portada-inicio .portada-inicio img .portada-inicio.hover button {
     -webkit-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
   
-  header {
+  .portada-inicio img .portada-inicio header {
     width: 100%;
     margin-bottom: 10px;
     position: fixed;
@@ -117,9 +143,10 @@
     background: #000000;
   }
   
-  body {
+  .portada-inicio img .portada-inicio body {
     background: #000000;
   }
+
 
 
 /*PAG SERVICIOS*/
