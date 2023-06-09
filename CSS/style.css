@@ -432,7 +432,7 @@ transform: rotate(360deg);
   padding-right: 18px;
 }
 .texto-info .titulo-qs {
-  font-size: 50px;
+  font-size: 4em;
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin-top: 4%;
@@ -492,7 +492,19 @@ footer footer p {
   }
 }
 
+@media screen and (max-width: 768px){
+  .texto-info{
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
 
+  .texto-info h2{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+}
 
 
 
