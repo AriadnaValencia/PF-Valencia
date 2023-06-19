@@ -160,9 +160,7 @@
     text-align: center;
   }
   }
-  
-  
-  
+
   /*PAG CLIENTES*/
   .clientes {
     background-color: #381d45;
@@ -177,17 +175,15 @@
     width: 30%;
     padding-right: 6px;
     margin-top: 10%;
-
-    .columna {
-        -webkit-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
         transition: 0.5s linear;
-    }
-        .columna:hover {
+
+        :hover {
             -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
           }
           
-          .columna img:hover {
+         img:hover {
             border-radius: 50%;
             -webkit-border-radius: 50%;
             box-shadow: 0px 0px 15px 15px #6a17ae;
@@ -198,7 +194,7 @@
   .fila {
     margin-left: 30%;
 
-    .fila:after {
+    :after {
         content: "";
         clear: both;
         display: table;
@@ -222,14 +218,14 @@
     padding-left: 16px;
     padding-right: 18px;
 
-    .texto-info .titulo-qs {
+    .titulo-qs {
         font-size: 50px;
         font-family: "Poppins", sans-serif;
         text-align: center;
         margin-top: 4%;
       }
       
-      .texto-info h2 {
+       h2 {
         width: 80%;
         font-size: 20px;
         font-family: "Poppins", sans-serif;
@@ -240,8 +236,6 @@
         color: black;
       }
   }
-  
-  
   
   /*PAG CONTACTO*/
   .contacto {
@@ -258,7 +252,7 @@
     background-color: #fbfbfb;
     padding-left: 30px;
 
-    .contact_form input {
+     input {
         background-color: #fbfbfb;
         width: 408px;
         height: 40px;
@@ -271,7 +265,7 @@
         margin-bottom: 20px;
       }
       
-      .contact_form textarea {
+      textarea {
         background-color: #fbfbfb;
         width: 405px;
         height: 150px;
@@ -285,12 +279,12 @@
         padding-top: 15px;
       }
       
-      .contact_form label {
+      label {
         display: block;
         float: center;
       }
       
-      .contact_form .boton-contacto {
+     .boton-contacto {
         height: 45px;
         padding-left: 5px;
         padding-right: 5px;
@@ -303,55 +297,55 @@
         border-radius: 10px;
         width: 420px;
         cursor: pointer;
+
+        p {
+            color: #fff;
+          }
       }
       
-      .contact_form .boton-contacto p {
-        color: #fff;
-      }
-      
-      .contact_form span {
+      span {
         color: #ab4493;
       }
       
-      .contact_form .aviso {
+      .aviso {
         font-size: 13px;
         color: #0e0e0e;
       }
       
-      .contact_form h1 {
+       h1 {
         font-size: 39px;
         text-align: letf;
         padding-bottom: 20px;
         color: #ab4493;
       }
       
-      .contact_form h3 {
+       h3 {
         font-size: 16px;
         padding-bottom: 30px;
         color: #0e0e0e;
       }
       
-      .contact_form p {
+       p {
         font-size: 14px;
         color: #0e0e0e;
       }
       
-      .contact_form ::-webkit-input-placeholder {
+      :-webkit-input-placeholder {
         color: #a8a8a8;
       }
       
-      .contact_form ::-webkit-textarea-placeholder {
+      :-webkit-textarea-placeholder {
         color: #a8a8a8;
       }
       
-      .contact_form .formulario input:focus {
+      .formulario input:focus {
         outline: 0;
         border: 1px solid #97d848;
-      }
-      
-      .contact_form .formulario textarea:focus {
-        outline: 0;
-        border: 1px solid #97d848;
+
+        textarea:focus {
+            outline: 0;
+            border: 1px solid #97d848;
+          }
       }
   }
   
