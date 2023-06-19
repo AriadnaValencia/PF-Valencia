@@ -16,8 +16,40 @@ a:active {
 }
 
 /*FIN FORMATEO*/
-
-/*HEADER*/ 
+/*FOOTER*/
+footer {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3px;
+  margin: 4px;
+  border-top: 4px;
+  background: #000000;
+}
+footer .logo-footer-img {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin-right: 30px;
+}
+footer .iconos-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+footer .nav-item {
+  justify-content: space-between;
+  margin: 10px;
+}
+footer footer p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-left: 40px;
+  color: rgb(228, 199, 255);
+}
 
 header {
   width: 100%;
@@ -74,21 +106,6 @@ body {
   background-color: rgba(79, 40, 111, 0.8509803922);
 }
 
-header {
-  width: 100%;
-  margin-bottom: 10px;
-  position: fixed;
-  z-index: 100;
-  backdrop-filter: blur(16px) saturate(180%);
-  border-radius: 0 0 10px 10px;
-  background: #000000;
-}
-
-body {
-  background: #000000;
-}
-
-/*PORTADA*/
 .portada-inicio img {
   width: 100%;
   height: 100%;
@@ -213,6 +230,87 @@ body {
   background: #000000;
 }
 
+@media screen and (max-width: 800px) {
+  /*LOGO NAV*/
+  .navbar .img-logo {
+    width: 75px;
+    margin-top: 1px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /*PORTADA*/
+  .portada-inicio img {
+    width: 100%;
+    height: 70vh;
+    margin-top: 20%;
+    border-radius: 10px;
+  }
+}
+/*CLIENTES*/
+@media screen and (max-width: 800px) {
+  .clientes .columna {
+    width: 50%;
+    padding-right: 6px;
+    margin-top: 10%;
+  }
+  .fila img {
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+  .clientes .fila {
+    margin-left: 2%;
+  }
+}
+/*CONTACTO*/
+@media screen and (max-width: 800px) {
+  .contact_form {
+    width: 350px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .contact_form input {
+    width: 280px;
+    height: 40px;
+  }
+  .contact_form textarea {
+    width: 280px;
+    height: 150px;
+  }
+  .contact_form .boton-contacto {
+    height: 45px;
+    width: 280px;
+  }
+}
+/*QUIENES SOMOS*/
+@media screen and (max-width: 800px) {
+  .texto-info {
+    background-image: linear-gradient(200deg, rgba(245, 48, 255, 0.4862745098) 0, rgba(221, 31, 255, 0.5607843137) 25%, #bf00ff 50%, #a000f9 75%, #7f00f5 100%);
+    position: absolute;
+    margin-left: 20px;
+    width: 90%;
+    height: 80vh;
+    border-radius: 20px;
+  }
+  .texto-info {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .texto-info h2 {
+    color: #ffffff;
+    font-size: 13.2px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .texto-info .titulo-qs {
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 4%;
+  }
+}
 /*PAG SERVICIOS*/
 .servicios {
   background-color: #381d45;
@@ -285,43 +383,76 @@ body {
 .clientes {
   background-color: #381d45;
 }
-.clientes .clientes {
-  margin-top: 20px;
-}
-.clientes .columna {
+.clientes .clientes .columna {
   float: left;
   width: 30%;
-  padding-right: 2px;
-  padding-top: 2px;
+  padding-right: 6px;
+  margin-top: 10%;
 }
-.clientes .fila {
+.clientes .clientes .fila {
   margin-left: 30%;
 }
-.clientes .fila::after {
+.clientes .clientes .fila:after {
   content: "";
   clear: both;
   display: table;
 }
-.clientes img {
-  /* Para que sea responsiva */
+.clientes .clientes img {
   width: 100%;
 }
+.clientes .columna {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+.clientes .columna:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.clientes .columna img:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #6a17ae;
+  -webkit-box-shadow: 0px 0px 15px 15px #6a17ae;
+}
 
-.columna img:hover{
-  border-radius:50%;
--webkit-border-radius:50%;
-box-shadow: 0px 0px 15px 15px #6a17ae;
--webkit-box-shadow: 0px 0px 15px 15px #6a17ae;
-transform: rotate(360deg);
--webkit-transform: rotate(360deg);
+/*PAG QUIENES SOMOS*/
+.info {
+  background-color: #381d45;
+  width: 100%;
+  height: 100vh;
+}
+.info .texto-info {
+  background-color: rgba(255, 255, 255, 0.775);
+  display: inline-block;
+  margin: 100px 20px 0 80px;
+  width: 90%;
+  height: 80vh;
+  border-radius: 20px;
+  padding-left: 16px;
+  padding-right: 18px;
+}
+.info .texto-info .titulo-qs {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 4%;
+}
+.info .texto-info h2 {
+  width: 80%;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  text-align: center;
+  margin-top: 1%;
+  margin-left: 10%;
+  color: black;
 }
 
 /*PAG CONTACTO*/
 .contacto {
   background-color: #381d45;
 }
-
-.contact_form {
+.contacto .contact_form {
   width: 460px;
   height: auto;
   margin: auto;
@@ -331,7 +462,7 @@ transform: rotate(360deg);
   background-color: #fbfbfb;
   padding-left: 30px;
 }
-.contact_form input {
+.contacto .contact_form input {
   background-color: #fbfbfb;
   width: 408px;
   height: 40px;
@@ -343,7 +474,7 @@ transform: rotate(360deg);
   padding-left: 10px;
   margin-bottom: 20px;
 }
-.contact_form textarea {
+.contacto .contact_form textarea {
   background-color: #fbfbfb;
   width: 405px;
   height: 150px;
@@ -356,11 +487,11 @@ transform: rotate(360deg);
   margin-bottom: 20px;
   padding-top: 15px;
 }
-.contact_form label {
+.contacto .contact_form label {
   display: block;
   float: center;
 }
-.contact_form .boton-contacto {
+.contacto .contact_form .boton-contacto {
   height: 45px;
   padding-left: 5px;
   padding-right: 5px;
@@ -374,143 +505,44 @@ transform: rotate(360deg);
   width: 420px;
   cursor: pointer;
 }
-.contact_form .boton-contacto p {
+.contacto .contact_form .boton-contacto p {
   color: #fff;
 }
-.contact_form span {
+.contacto .contact_form span {
   color: #ab4493;
 }
-.contact_form .aviso {
+.contacto .contact_form .aviso {
   font-size: 13px;
   color: #0e0e0e;
 }
-.contact_form h1 {
+.contacto .contact_form h1 {
   font-size: 39px;
   text-align: letf;
   padding-bottom: 20px;
   color: #ab4493;
 }
-.contact_form h3 {
+.contacto .contact_form h3 {
   font-size: 16px;
   padding-bottom: 30px;
   color: #0e0e0e;
 }
-.contact_form p {
+.contacto .contact_form p {
   font-size: 14px;
   color: #0e0e0e;
 }
-.contact_form ::-webkit-input-placeholder {
+.contacto .contact_form ::-webkit-input-placeholder {
   color: #a8a8a8;
 }
-.contact_form ::-webkit-textarea-placeholder {
+.contacto .contact_form ::-webkit-textarea-placeholder {
   color: #a8a8a8;
 }
-.contact_form .formulario input:focus {
+.contacto .contact_form .formulario input:focus {
   outline: 0;
   border: 1px solid #97d848;
 }
-.contact_form .formulario textarea:focus {
+.contacto .contact_form .formulario textarea:focus {
   outline: 0;
   border: 1px solid #97d848;
 }
-
-/*PAG QUIENES SOMOS*/
-.info {
-  background-color: #381d45;
-  width: 100%;
-  height: 100vh;
-}
-
-.texto-info {
-  background-color: rgba(255, 255, 255, 0.775);
-  display: inline-block;
-  margin: 100px 20px 0 80px;
-  width: 90%;
-  height: 80vh;
-  border-radius: 20px;
-  padding-left: 16px;
-  padding-right: 18px;
-}
-.texto-info .titulo-qs {
-  font-size: 4em;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  margin-top: 4%;
-}
-.texto-info h2 {
-  width: 80%;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  color: black;
-  text-align: center;
-  margin-top: 1%;
-  margin-left: 10%;
-  color: black;
-}
-
-
-/*FOOTER*/
-footer {
-  display: flex;
-  flex: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 3px;
-  margin: 4px;
-  border-top: 4px;
-  background: #000000;
-}
-footer .logo-footer-img {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  margin-right: 30px;
-}
-footer .iconos-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-right: 50px;
-}
-footer .nav-item {
-  justify-content: space-between;
-  margin: 10px;
-}
-footer footer p {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  margin-left: 40px;
-  color: rgb(228, 199, 255);
-}
-
-
-@media (hover: none){
-  .portada-inicio.hover:after, .portada-inicio.hover:before{
-    border-left: 3px solid black;
-  border-right: 3px solid black;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .texto-info{
-    font-size: 10px;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-
-  .texto-info h2{
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-}
-
-
-
-
-
-
-
 
 /*# sourceMappingURL=style.css.map */

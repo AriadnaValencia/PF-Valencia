@@ -1,0 +1,24 @@
+/*CONTACTO*/
+@media screen and (max-width: 800px){
+.contact_form {
+    width: 350px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .contact_form input {
+    width: 280px;
+    height: 40px;
+  }
+
+  .contact_form textarea {
+    width: 280px;
+    height: 150px;
+  }
+
+  .contact_form .boton-contacto {
+    height: 45px;
+    width: 280px;
+  }
+}
