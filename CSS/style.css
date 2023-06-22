@@ -431,7 +431,7 @@ button .boton-inicio a {
 /*FOOTER*/
 footer {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-right: 3px;
@@ -439,6 +439,7 @@ footer {
   border-top: 4px;
   background: #000000;
 }
+
 footer .logo-footer-img {
   position: relative;
   align-items: center;
