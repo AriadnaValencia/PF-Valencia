@@ -1,30 +1,29 @@
 /*QUIENES SOMOS*/
-@media screen and (max-width: 800px){
-    .texto-info {
-        background-image: linear-gradient(200deg, #f530ff7c 0, #dd1fff8f 25%, #bf00ff 50%, #a000f9 75%, #7f00f5 100%);
-        position: absolute;
-        margin-left: 20px;
-        width: 90%;
-        height: 80vh;
-        border-radius: 20px;
-      }
-      .texto-info{
-        font-size: 10px;
-        text-align: center;
-        margin-bottom: 5%;
-      }
-    
-      .texto-info h2{
-        color: #ffffff;
-        font-size: 13.2px;
-        text-align: center;
-        margin-bottom: 5%;
-      }
-      .texto-info .titulo-qs{
-        font-size: 26px;
-        font-family: "Poppins", sans-serif;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        margin-top: 4%;
-        }
-    }
+@media screen and (max-width: 800px) {
+  .texto-info {
+    background-image: linear-gradient(200deg, rgba(245, 48, 255, 0.4862745098) 0, rgba(221, 31, 255, 0.5607843137) 25%, #bf00ff 50%, #a000f9 75%, #7f00f5 100%);
+    position: absolute;
+    margin-left: 20px;
+    width: 90%;
+    height: 80vh;
+    border-radius: 20px;
+  }
+  .texto-info {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .texto-info h2 {
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .texto-info .titulo-qs {
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 4%;
+  }
+}
