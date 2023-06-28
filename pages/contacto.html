@@ -1,115 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta description="¡Bienvenida a Aria!
+        Nos esforzamos por ofrecerte un servicio excepcional y una experiencia que te haga sentir mimado y renovado, ya sea que desees un diseño de uñas innovador y personalizado, unas cejas perfectamente definidas o unas pestañas de aspecto glamuroso, estamos aquí para hacer realidad tus deseos.">
+        <meta keywords="uñas, esmaltado, semipermanente, cejas, perfilado, lifitng, pestañas, estetica, pies">
+
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
+        <!--FUENTES-->
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../CSS/style.css">
-    <title>Contacto</title>
-    <!--FUENTES-->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap" rel="stylesheet">
-</head>
+        <!--FAVICON-->
+        <link rel="icon" type="image/png" href="./assets/image/favicon.png">
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="logo">
-                    <a href="../index.html"><img class="img-logo" src="../assets/image/img-logo-y-portadas/logo.png" alt="logo"></a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <li><a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
-                        <li><a class="nav-link" href="../pages/servicios.html">Servicios</a></li>
-                        <li><a class="nav-link" href="../pages/clientes.html">Clientes</a></li>
-                        <li><a class="nav-link" href="../pages/quienes-somos.html">¿Quiénes somos?</a></li>
-                        <li><a class="nav-link" href="#">Contacto</a></li>
+        <!--CSS-->
+            <link rel="stylesheet" href="../CSS/style.css">
+
+        <title>Contacto</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="../index.html"><img class="img-logo" src="../assets/image/img-logo-y-portadas/logo.png" alt="logo-del-emprendimiento"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <li><a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
+                            <li><a class="nav-link" href="../pages/servicios.html">Servicios</a></li>
+                            <li><a class="nav-link" href="../pages/clientes.html">Clientes</a></li>
+                            <li><a class="nav-link" href="../pages/quienes-somos.html">¿Quiénes somos?</a></li>
+                            <li><a class="nav-link" href="#">Contacto</a></li>
+                        </div>
                     </div>
                 </div>
+            </nav>
+        </header>
+
+        <main class="contacto">
+            <div class="contact_form">
+                <div class="formulario">
+                    <h1>Formulario de contacto</h1>
+                    <h3>¡Hola! Dejanos tu mensaje y nos contactaremos contigo.</h3>
+                    <form action="submeter-formulario.php" method="post">
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                placeholder="Escribe tu nombre">
+                        </p>
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                placeholder="Escribe tu Email">
+                        </p>
+                        <p>
+                            <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                                placeholder="Deja aquí tu mensaje..."></textarea>
+                        </p>
+                        <button class="boton-contacto" type="submit" name="enviar_formulario" id="enviar">Enviar
+                        </button>
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>
+
+                    </form>
+                </div>
             </div>
-        </nav>
-    </header>
-
-    <main class="contacto">
-        <div class="contact_form">
-            <div class="formulario">
-                <h1>Formulario de contacto</h1>
-                <h3>¡Hola! Dejanos tu mensaje y nos contactaremos contigo.</h3>
-                <form action="submeter-formulario.php" method="post">
-                    <p>
-                        <label for="nombre" class="colocar_nombre">Nombre
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                            placeholder="Escribe tu nombre">
-                    </p>
-                    <p>
-                        <label for="email" class="colocar_email">Email
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <input type="email" name="introducir_email" id="email" required="obligatorio"
-                            placeholder="Escribe tu Email">
-                    </p>
-                    <p>
-                        <label for="telefone" class="colocar_telefono">Teléfono
-                        </label>
-                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                    </p>
-                    <p>
-                        <label for="mensaje" class="colocar_mensaje">Mensaje
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                            placeholder="Deja aquí tu mensaje..."></textarea>
-                    </p>
-                    <button class="boton-contacto" type="submit" name="enviar_formulario" id="enviar">Enviar
-                    </button>
-                    <p class="aviso">
-                        <span class="obligatorio"> * </span>los campos son obligatorios.
-                    </p>
-
-                </form>
-            </div>
-        </div>
-    </main>
+        </main>
 
 
-    <footer>
-        <p class="col-md-4 mb-0 text-body-secondary">© 2023 Ariadna Valencia</p>
+        <footer>
+            <p class="col-md-4 mb-0 text-body-secondary">© 2023 Ariadna Valencia</p>
 
-        <a href="../index.html"><img class="logo-footer-img" src="../assets/image/img-logo-y-portadas/logo.png" alt="logo">
-            <use xlink:href="#bootstrap"></use>
-        </a>
+            <a href="../index.html"><img class="logo-footer-img" src="../assets/image/img-logo-y-portadas/logo.png" alt="logo-del-emprendimiento">
+                <use xlink:href="#bootstrap"></use>
+            </a>
 
-        <ul class="iconos-footer">
-            <li class="nav-item"><a href="https://instagram.com/_aria.21_?igshid=MzRlODBiNWFlZA=="><img src="../assets/icon/instagram.png"></a></li>
-            <li class="nav-item"><a href="https://wa.me/3416000015"><img src="../assets/icon/whatsapp.png" alt="whatsapp"></a></li>
-            <li class="nav-item"><a href="#"><img src="../assets/icon/gmail.png" alt="gmail"></a></li>
-            <li class="nav-item"><a href="#"><img src="../assets/icon/linkedin.png" alt="linkedin"></a></li>
-        </ul>
-    </footer>
+            <ul class="iconos-footer">
+                <li class="nav-item"><a href="https://instagram.com/_aria.21_?igshid=MzRlODBiNWFlZA=="><img src="../assets/icon/instagram.png" alt="logo-instagram"></a></li>
+                <li class="nav-item"><a href="https://wa.me/3416000015"><img src="../assets/icon/whatsapp.png" alt="logo-whatsapp"></a></li>
+                <li class="nav-item"><a href="#"><img src="../assets/icon/gmail.png" alt="logo-gmail"></a></li>
+                <li class="nav-item"><a href="#"><img src="../assets/icon/linkedin.png" alt="logo-linkedin"></a></li>
+            </ul>
+        </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    </body>
 
 </html>

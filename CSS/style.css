@@ -155,24 +155,20 @@ button .boton-inicio a {
   z-index: 3;
 }
 
-.portada-inicio:hover > img,
 .portada-inicio.hover > img {
   opacity: 50%;
 }
 
-.portada-inicio:hover:before,
 .portada-inicio.hover:before {
   -webkit-transform: skew(45deg) translateX(-55%);
   transform: skew(45deg) translateX(-55%);
 }
 
-.portada-inicio:hover:after,
 .portada-inicio.hover:after {
   -webkit-transform: skew(45deg) translateX(55%);
   transform: skew(45deg) translateX(55%);
 }
 
-.portada-inicio:hover button,
 .portada-inicio.hover button {
   -webkit-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
@@ -418,11 +414,11 @@ button .boton-inicio a {
 }
 .contact_form .formulario input:focus {
   outline: 0;
-  border: 1px solid #97d848;
+  border: 1px solid #c551ef;
 }
 .contact_form .formulario input:focus textarea:focus {
   outline: 0;
-  border: 1px solid #97d848;
+  border: 1px solid #c551ef;
 }
 
 /*FOOTER*/
